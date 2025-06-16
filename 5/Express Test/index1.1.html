@@ -1,0 +1,34 @@
+<!-- For Checking Out It's working open image1.png -->
+
+<html>
+    <head>
+        <title>
+            Server Testing
+        </title>
+    </head>
+
+    <body>
+        <H1> Server Testing Phase</H1>
+
+        <div id = "post1"></div>
+        <div id = "post2"></div>
+        <div id = "post3"></div>
+        <div id = "post4"></div>
+        <script>
+            // <!-- For Checking Out It's working open [image1.png]
+            async function getPost()
+            {
+                const res = await fetch("https://jsonplaceholder.typicode.com/posts/1");
+                const data = await res.json();
+
+                document.getElementById("post1").innerHTML = "Post UserID: " + data.userId;
+                document.getElementById("post2").innerHTML = "Post  ID   : " + data.id;
+                document.getElementById("post3").innerHTML = "Post Title : " + data.title;
+                document.getElementById("post4").innerHTML = "Post  Body : " + data.body;
+            }
+
+            getPost();
+        </script>
+    </body>
+</html>
+

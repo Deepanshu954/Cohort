@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.6/axios.min.js"></script>
+</head>
+
+<body>
+  <div id="posts"></div>
+  <div id="post1"></div>
+
+  <!-- 1st Test-->
+  <script>
+    async function fetchPosts() {
+      const res = await axios.get("https://jsonplaceholder.typicode.com/posts/1");
+      document.getElementById("posts").innerHTML = "Title:"+ res.data.title;
+    }
+
+    fetchPosts();
+  </script>
+
+  <!-- 2nd Test-->
+  <script>
+    async function fetchPost()
+    {
+        const data = await axios.get("https://jsonplaceholder.typicode.com/posts/1");
+        document.getElementById("post1").innerHTML = "Body:" + data.data.body;
+    }
+    fetchPost();
+  </script>
+</body>
+
+</html>
