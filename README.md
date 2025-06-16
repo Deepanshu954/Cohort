@@ -87,53 +87,53 @@ This repository showcases my journey through various web development concepts an
   - State management patterns
 
 ### Day 6
-**Project:** React Router and Navigation
+**Project:** RESTful APIs with Express.js
 - **Features:**
-  - Multi-page application
-  - Route protection
-  - Dynamic routing
+  - Built basic CRUD endpoints
+  - Learned about request/response lifecycle
+  - Implemented middleware for logging and error handling
 - **Technologies Used:**
-  - React Router
-  - React
-  - CSS
+  - Node.js
+  - Express.js
+  - JavaScript
 - **Key Learnings:**
-  - Route configuration
-  - Navigation guards
-  - URL parameters
-  - Nested routes
+  - RESTful API design principles
+  - Express.js framework
+  - Middleware functions
+  - CRUD operations
 
 ### Day 7
-**Project:** State Management
+**Project:** MongoDB Integration
 - **Features:**
-  - Global state management
-  - Data persistence
-  - State updates
+  - Connected Node.js app to MongoDB using Mongoose
+  - Defined schemas and models
+  - Performed basic database operations (CRUD)
 - **Technologies Used:**
-  - React
-  - Redux/Context
-  - Local Storage
+  - MongoDB
+  - Mongoose
+  - Node.js
 - **Key Learnings:**
-  - State management patterns
-  - Data flow
-  - State persistence
-  - Performance optimization
+  - MongoDB database concepts
+  - Mongoose ODM
+  - Data modeling
+  - Querying and updating data
 
 ### Day 8
-**Project:** Course Selling Platform
+**Project:** Authentication & Authorization
 - **Features:**
-  - Course listing
-  - User authentication
-  - Payment integration
+  - Implemented user registration and login
+  - Used JWT for authentication
+  - Protected routes using middleware
 - **Technologies Used:**
-  - React
+  - JSON Web Tokens (JWT)
   - Node.js
   - Express
   - MongoDB
 - **Key Learnings:**
-  - Full-stack development
-  - Authentication
-  - Payment processing
-  - Database integration
+  - Authentication vs Authorization
+  - JWT structure and usage
+  - Secure password storage
+  - Protecting routes and resources
 
 ### Day 9
 **Project:** Advanced React Application
