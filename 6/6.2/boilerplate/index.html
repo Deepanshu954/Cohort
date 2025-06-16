@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>
+            Todo List
+        </title>
+
+        <link rel = "stylesheet" href = "style.css">
+    </head>
+
+
+    <body>
+        <div id = "items" class = "container">
+            <div>
+                <h1> Todo List</h1>
+            </div>
+
+            <div>
+                <input id = "inputEle" type = "text" placeholder = "Enter Task">
+                <button onclick = "addTask()" class = "but">Add</button>
+            </div>
+
+            <div id = "todo-0" class = "task">
+                <h4> Task 0</h4>
+                <button onclick = "deleteTask(0)">❌</button>
+            </div>
+
+            <div id = "todo-1" class = "task">
+                <h4> Task 1</h4>
+                <button onclick = "deleteTask(1)">❌</button>
+            </div>
+
+        </div>
+
+        <script src = "app.js"></script>
+
+    </body>
+</html>

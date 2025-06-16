@@ -1,0 +1,110 @@
+<head>
+    <title>
+        Auth
+    </title>
+</head>
+<body>
+    <div>
+        <h1>SignUp</h1>
+        <input type = "text" placeholder = "Username" id = "username1">
+        <input type = "password" placeholder = "Password" id = "pass1">
+        <button onclick = "signUp()">SignUp</button>
+    </div>
+    <br><br>
+    <div>
+        <h1>SignIn</h1>
+        <input type = "text" placeholder = "Username" id = "username2">
+        <input type = "password" placeholder = "Password" id = "pass2">
+        <button onclick = "signIn()">SignIn</button>
+    </div>
+
+    <br><br><br>
+    <div>
+        <div>
+            <h1>User Information</h1>
+        </div>
+        <div>
+            <h2>UserName: </h2>
+            <span id="user"></span>
+        </div>
+        <button onclick="info()">Get Info</button>
+    </div>
+
+    <br><br><br>
+    <button onclick = "logOut()">Log Out</button>
+
+    <br><br><br>
+    <button onclick="todo()">Todo</button>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js"></script>
+
+    <script>
+        async function signUp()
+        {
+            const username = document.getElementById("username1").value;
+            const pass = document.getElementById("pass1").value;
+
+            try {
+                const response = await axios.post("http://localhost:3000/signUp", {
+                    username: username,
+                    pass: pass
+                });
+                alert("SignUp Successfull");
+            } catch (e) {
+                alert(e.response?.data?.msg || "SignUp Failed");
+            }
+        }
+
+        async function signIn()
+        {
+            const username = document.getElementById("username2").value;
+            const pass = document.getElementById("pass2").value;
+
+            try {
+                const response = await axios.post("http://localhost:3000/signIn", {
+                    username: username,
+                    pass: pass,
+                });
+                alert("SignIn Successfull");
+                // Save token for future requests
+                localStorage.setItem("token", response.data.Token);
+ 
+            } catch (e) {
+                alert(e.response?.data?.msg || "SignIn Failed");
+            }
+        }
+
+        async function info()
+        {
+            const token = localStorage.getItem("token");
+            if (!token) {
+                alert("Please sign in first!");
+                return;
+            }
+            try {
+                const response = await axios.get("http://localhost:3000/me", {
+                    headers: {
+                        token: token
+                    }
+                });
+                document.getElementById("user").innerText = response.data.Username || "";
+            } catch (e) {
+                alert(e.response?.data?.msg || "Failed to fetch user info");
+            }
+        }
+
+        async function logOut()
+        {
+
+            localStorage.removeItem("token");
+            document.getElementById("user").innerText = "";
+            alert("Logged out!");
+        }
+
+        async function todo()
+        {
+            const response = await axios.get("http://localhost:3000/todo",{});
+        }
+    </script>
+</body>
