@@ -9,7 +9,7 @@ const {z} = require("zod");
 const app = express();
 app.use(express.json());
 
-mongoose.connect("mongodb+srv://Deepanshu954:25148912@cluster0.8wpbjpq.mongodb.net/todo-testing");
+mongoose.connect("mongodb+srv://<username>:<pass>@cluster0.8wpbjpq.mongodb.net/todo-testing");
 
 app.post("/signUp", async function(req, res) 
 {
