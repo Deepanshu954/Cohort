@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="Items" class="container">
+        <h1>Todo List</h1>
+        <div>
+            <input id="inputEle" class="input" type="text" placeholder="Add New Task" autofocus>
+            <button id="addBtn" onclick="addTask()">Add</button>
+        </div>
+        <div id="tasks-container">
+            <div id="todo-0" class="dis">
+                <h4>Go To Gym</h4>
+                <button class="delete-btn" onclick="deleteTask(0)">❌</button>
+            </div>
+            <div id="todo-1" class="dis">
+                <h4>Party Time</h4>
+                <button class="delete-btn" onclick="deleteTask(1)">❌</button>
+            </div>
+            <div id="todo-2" class="dis">
+                <h4>Have Fun</h4>
+                <button class="delete-btn" onclick="deleteTask(2)">❌</button>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
