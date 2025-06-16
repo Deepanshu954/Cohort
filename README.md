@@ -55,63 +55,76 @@ This repository showcases my journey through various web development concepts an
   - Promises and async/await
 
 ### Day 4
-**Project:** React Basics
+**Project:** CLI Utility & Express Web App Skeleton  
 - **Features:**
-  - Component-based architecture
-  - State management
-  - Props handling
+  - CLI utility for file-based tasks (word count, etc.)
+  - Colorful terminal output with Chalk
+  - Minimal Express.js web app skeleton (CommonJS & ESM)
 - **Technologies Used:**
-  - React
-  - JSX
-  - CSS
+  - Node.js
+  - Commander.js
+  - Chalk
+  - Express.js
+  - HTML/CSS (placeholders)
 - **Key Learnings:**
-  - React components
-  - Props and state
-  - Component lifecycle
-  - React hooks basics
+  - Building CLI tools with Node.js
+  - Using Chalk for terminal styling
+  - Modular command structure
+  - Setting up a basic Express.js server (CommonJS & ESM)
 
 ### Day 5
-**Project:** React Advanced Concepts
+**Project:** JavaScript & Express Practice  
 - **Features:**
-  - Custom hooks
-  - Context API
-  - Form handling
+  - Practice with JavaScript array methods (map, filter, arrow functions)
+  - Express.js server with CORS and REST API endpoints (sum, subtract, multiply, divide)
+  - Middleware examples (age validation)
+  - Frontend-backend integration with Axios and Fetch
 - **Technologies Used:**
-  - React
-  - React Hooks
-  - Context API
+  - JavaScript (ES6+)
+  - Node.js
+  - Express.js
+  - CORS
+  - Axios (frontend)
+  - HTML5/CSS3
 - **Key Learnings:**
-  - Custom hooks creation
-  - Context API usage
-  - Form validation
-  - State management patterns
+  - Advanced JavaScript array methods
+  - Setting up Express.js servers and middleware
+  - Handling CORS
+  - Connecting frontend to backend APIs
 
 ### Day 6
-**Project:** RESTful APIs with Express.js
+**Project:** RESTful APIs with Express.js  
 - **Features:**
   - Built basic CRUD endpoints
   - Learned about request/response lifecycle
   - Implemented middleware for logging and error handling
+  - Simple authentication (manual token & JWT)
+  - Todo List app (frontend + backend)
 - **Technologies Used:**
   - Node.js
   - Express.js
   - JavaScript
+  - JSON Web Token (JWT)
+  - HTML/CSS/JS (frontend)
 - **Key Learnings:**
   - RESTful API design principles
   - Express.js framework
   - Middleware functions
   - CRUD operations
+  - Basic authentication
 
 ### Day 7
-**Project:** MongoDB Integration
+**Project:** MongoDB Integration  
 - **Features:**
   - Connected Node.js app to MongoDB using Mongoose
   - Defined schemas and models
   - Performed basic database operations (CRUD)
+  - JWT-based authentication
 - **Technologies Used:**
   - MongoDB
   - Mongoose
   - Node.js
+  - Express.js
 - **Key Learnings:**
   - MongoDB database concepts
   - Mongoose ODM
@@ -119,11 +132,12 @@ This repository showcases my journey through various web development concepts an
   - Querying and updating data
 
 ### Day 8
-**Project:** Authentication & Authorization
+**Project:** Authentication & Authorization  
 - **Features:**
   - Implemented user registration and login
   - Used JWT for authentication
   - Protected routes using middleware
+  - Admin/user roles and course management
 - **Technologies Used:**
   - JSON Web Tokens (JWT)
   - Node.js
