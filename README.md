@@ -9,7 +9,7 @@ This repository showcases my journey through various web development concepts an
 ## Daily Progress
 
 ### Day 1
-**Project:** Basic HTML/CSS Website
+**Project:** Zerodha & VS Code Clone
 - **Features:**
   - Responsive layout
   - Navigation menu
@@ -39,7 +39,7 @@ This repository showcases my journey through various web development concepts an
   - Functions and variables
 
 ### Day 3
-**Project:** Advanced JavaScript
+**Project:** Todo Web App
 - **Features:**
   - API integration
   - Async operations
@@ -93,7 +93,7 @@ This repository showcases my journey through various web development concepts an
   - Connecting frontend to backend APIs
 
 ### Day 6
-**Project:** RESTful APIs with Express.js  
+**Project:** RESTful APIs with Express.js  & Auth
 - **Features:**
   - Built basic CRUD endpoints
   - Learned about request/response lifecycle
@@ -132,7 +132,7 @@ This repository showcases my journey through various web development concepts an
   - Querying and updating data
 
 ### Day 8
-**Project:** Authentication & Authorization  
+**Project:** Course Selling Backend Server 
 - **Features:**
   - Implemented user registration and login
   - Used JWT for authentication
