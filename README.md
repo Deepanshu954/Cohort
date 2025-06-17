@@ -1,4 +1,4 @@
-# 9-Day Learning Journey
+# 30-Day Learning Journey
 
 This repository contains my learning progress over 9 days, with each day's work organized in separate folders. Below is a detailed breakdown of what I learned and built each day.
 
