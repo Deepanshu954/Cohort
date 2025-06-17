@@ -1,6 +1,6 @@
-# 9-Day Learning Journey
+# 30-Day Learning Journey
 
-This repository contains my learning progress over 9 days, with each day's work organized in separate folders. Below is a detailed breakdown of what I learned and built each day.
+This repository contains my learning progress over 10 days, with each day's work organized in separate folders. Below is a detailed breakdown of what I learned and built each day.
 
 ## Overview
 
@@ -30,12 +30,9 @@ This repository showcases my journey through various web development concepts an
   - Event handling
 - **Technologies Used:**
   - JavaScript
-  - HTML
   - CSS
 - **Key Learnings:**
   - JavaScript basics
-  - DOM manipulation
-  - Event listeners
   - Functions and variables
 
 ### Day 3
@@ -150,20 +147,71 @@ This repository showcases my journey through various web development concepts an
   - Protecting routes and resources
 
 ### Day 9
-**Project:** Advanced React Application
-- **Features:**
-  - Complex UI components
-  - Performance optimization
-  - Testing
-- **Technologies Used:**
-  - React
-  - Testing libraries
-  - Performance tools
+**Project:** React Core Concepts & Fundamentals
+- **Topics & Concepts Studied:**
+  -  Starting a React project locally
+  –  Components
+  –  useState
+  –  Tracking re-renders
+  –  useEffect
+  –  props
+  –  Conditional Rendering
+  –  children
+  –  Lists and Keys
+  –  Inline styling
+  –  Class based vs functional components
+  –  Lifecycle events
+  –  Error boundary
+  –  Fragment
 - **Key Learnings:**
-  - Component optimization
-  - Testing strategies
-  - Performance monitoring
-  - Best practices
+  - How to start a React project locally (using Vite)
+  - Creating and using React components
+  - Managing state with `useState`
+  - Tracking and understanding re-renders
+  - Using the `useEffect` hook for side effects
+  - Passing and using `props` in components
+  - Conditional rendering in React
+  - Using `children` prop for component composition
+  - Rendering lists and using keys
+  - Applying inline styling in React
+  - Differences between class-based and functional components
+  - Understanding React lifecycle events
+  - Implementing error boundaries
+  - Using React Fragments to group elements
+- **Technologies Used:**
+  - React (v19+)
+  - Vite
+  - JavaScript (ES6+)
+  - ESLint
+
+### Day 10
+**Project:** Advanced React Patterns & State Management
+- **Topics & Concepts Studied:**
+  -  Single page applications, routing
+  -  Layouts
+  -  useRef
+  -  Custom hooks
+  -  Rolling up the state, unoptimal re-renders
+  -  Prop drilling
+  -  Context API
+  -  Testing the context API
+- **Key Learnings:**
+  - Building single page applications (SPAs) with React Router v6
+  - Structuring layouts and shared UI with `<Outlet />`
+  - Programmatic navigation with `useNavigate()`
+  - Managing focus and DOM refs with `useRef`
+  - Creating and using custom hooks
+  - Rolling up state and understanding unoptimal re-renders
+  - Prop drilling vs. Context API for state management
+  - Testing the Context API
+  - Introduction to Recoil for advanced state management
+  - Conditional rendering and state sharing
+  - Custom 404 pages and inline CSS styling
+- **Technologies Used:**
+  - React (v19+)
+  - Vite
+  - React Router v6
+  - JavaScript (ES6+)
 
 ## Technologies Used Throughout
 - HTML5
