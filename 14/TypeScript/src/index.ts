@@ -1,15 +1,26 @@
-function greet(user : {
-    name : string,
-    age : number
-})
+interface User
 {
-    console.log("Nice to meet you, "+ user.name);
-    console.log(`It's been ${user.age} since i know you`);
+    firstName : string,
+    lastName : string,
+    age : number,
 };
 
-let user = {
-    name : "Deepanshu",
+function isLegel(user : User) : void
+{
+    if(user.age > 18)
+    {
+        console.log("True");
+    }
+    else
+    {
+        console.log("False");
+    }
+}
+
+const user : User = {
+    firstName : "Deepanshu",
+    lastName : "Chauhan",
     age : 21,
 };
 
-greet(user);
+isLegel(user);
