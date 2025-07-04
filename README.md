@@ -322,6 +322,7 @@ Each day or week has its own folder with source code and notes. Here's how you c
 - Open the README in each subfolder (if present) for a project-specific breakdown.
 - Run any Vite-based project by navigating into the folder and running:
   ```bash
+  npm create vite@latest
   npm install
   npm run dev
   ```
