@@ -213,30 +213,129 @@ This repository showcases my journey through various web development concepts an
   - React Router v6
   - JavaScript (ES6+)
 
-## Technologies Used Throughout
-- HTML5
-- CSS3
+### Week 11 – Recoil State Management in React
+This week focuses on using Recoil for global and derived state management in React apps.
+
+#### 🧠 What I Learned
+- Using Recoil atoms for global state
+- Creating selectors for derived/computed state
+- Integrating Recoil with React components
+- Advantages of Recoil over prop drilling and Context API
+
+#### Features
+- Global counter state with Recoil atom
+- Selector to check if counter is even
+- Simple, reactive UI updates
+
+#### 🛠️ Technologies Used
+- React 19+
+- Recoil
+- Vite
 - JavaScript (ES6+)
-- React
-- Node.js
-- Express
-- MongoDB
-- Git
-- Various testing and development tools
 
-## Key Takeaways
-1. Progressive learning from basic to advanced concepts
-2. Hands-on experience with real-world projects
-3. Understanding of full-stack development
-4. Best practices in modern web development
-5. Problem-solving and debugging skills
+#### Notes
+- Recoil simplifies global state management and derived state in React.
+- Selectors help avoid unnecessary re-renders.
 
-## How to Use
-Each day's work is contained in its respective folder. Navigate to the specific day's folder to explore the code and documentation for that project.
+### Week 13 – React + Tailwind CSS & Modern UI Patterns
+This week explores building beautiful, modern UIs with React and Tailwind CSS, including responsive layouts, dark/light mode, and interactive components.
 
-## Future Learning Goals
-- Advanced state management
-- Server-side rendering
-- Microservices architecture
-- Cloud deployment
-- Advanced testing strategies
+#### 🧠 What I Learned
+- Integrating Tailwind CSS with React for utility-first styling
+- Building responsive layouts and components
+- Implementing dark/light mode toggling
+- Creating interactive UI elements (counters, forms, etc.)
+
+#### Features
+- Modern React app structure
+- Tailwind CSS v4 for rapid styling
+- Dark/Light mode toggle
+- Responsive design for all screen sizes
+- Interactive components (counter, forms, etc.)
+
+#### 🛠️ Technologies Used
+- React 19+
+- Tailwind CSS v4
+- Vite
+- JavaScript (ES6+)
+
+#### Notes
+- Tailwind CSS enables rapid prototyping and consistent design.
+- Combining React with Tailwind results in highly maintainable and scalable UIs.
+- Each subfolder demonstrates a different UI or pattern for hands-on learning.
+
+
+
+
+## 🧰 Technologies Used Throughout
+
+Throughout this journey, I’ve consistently used a wide range of modern tools and libraries that reflect a full-stack developer's core toolkit:
+
+- **Frontend:**
+  - HTML5, CSS3
+  - JavaScript (ES6+)
+  - React (v19+)
+  - Vite (React bundler)
+  - Tailwind CSS (v4)
+  
+- **Backend:**
+  - Node.js
+  - Express.js
+  - MongoDB with Mongoose
+
+- **State Management & Auth:**
+  - Context API, Recoil
+  - JSON Web Tokens (JWT)
+
+- **Tooling & Utilities:**
+  - Git & GitHub
+  - ESLint, Prettier
+  - Axios, Fetch API
+  - Commander.js, Chalk
+
+---
+
+## 📌 Key Takeaways
+
+1. **From Fundamentals to Full-Stack**  
+   Progressed from static web pages to complete full-stack applications with authentication and persistent storage.
+
+2. **Hands-On Projects**  
+   Reinforced every concept by building actual apps — from simple clones to authenticated APIs and dashboards.
+
+3. **React Mastery**  
+   Developed deep understanding of core React patterns, hooks, routing, context, and state management.
+
+4. **Backend Integration**  
+   Gained practical experience working with REST APIs, middleware, MongoDB schemas, and secure auth flows.
+
+5. **Design & UX**  
+   Explored UI design and theming with Tailwind CSS, focusing on responsiveness and accessibility.
+
+---
+
+## 🚀 How to Use This Repo
+
+Each day or week has its own folder with source code and notes. Here's how you can make the most of it:
+
+- Browse folders named `Day X` or `Week X` to explore what I built and learned.
+- Open the README in each subfolder (if present) for a project-specific breakdown.
+- Run any Vite-based project by navigating into the folder and running:
+  ```bash
+  npm install
+  npm run dev
+  ```
+
+Feel free to fork or clone this repo for your own learning path!
+
+---
+
+## 🎯 Future Learning Goals
+
+These are the next big milestones I’m aiming for:
+
+- 🌐 **Advanced State Management:** Dive deeper into Redux Toolkit, Zustand, and large-scale app patterns
+- ⚙️ **Server-Side Rendering:** Explore SSR and static site generation using Next.js
+- 🧱 **Microservices & APIs:** Build and deploy modular microservices with Docker and Express
+- ☁️ **Cloud Deployment:** Learn CI/CD and deploy apps using AWS, Vercel, or Railway
+- 🧪 **Testing at Scale:** Practice unit, integration, and E2E testing with Jest, React Testing Library, and Cypress

@@ -137,7 +137,7 @@ adminRouter.put("/create", admin_auth , async function(req,res)
     const {courseName, description, content,price} = parseCourse.data;
     try
     {
-        await coursesModule.create({
+        const course = await coursesModule.create({
             courseName,
             description,
             content,
