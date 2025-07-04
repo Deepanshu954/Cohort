@@ -1,6 +1,5 @@
 "use strict";
-function greet(name) {
-    console.log("Hello " + name);
+function delayCall(fn) {
+    setTimeout(fn, 1000);
 }
-let userName = "Deepanshu";
-greet(userName);
+delayCall(function () { console.log("Hey There"); });

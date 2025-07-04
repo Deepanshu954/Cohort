@@ -1,6 +1,6 @@
-function greet(userName: string) {
-    console.log("Hello " + userName);
+function delayCall(fn : () => void)
+{
+    setTimeout(fn,1000);
 }
 
-let userName: string = "Deepanshu";
-greet(userName);
+delayCall(function(){ console.log("Hey There")});
