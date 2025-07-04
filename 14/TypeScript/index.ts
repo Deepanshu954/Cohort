@@ -1,3 +1,6 @@
-let x : number = 10;
+function greet(userName: string) {
+    console.log("Hello " + userName);
+}
 
-console.log(x);
+let userName: string = "Deepanshu";
+greet(userName);
