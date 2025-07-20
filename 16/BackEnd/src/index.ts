@@ -1,18 +1,18 @@
-import { WebSocketServer } from "ws";
+import { WebSocketServer } from "ws"
 
 const wss = new WebSocketServer({ port : 8080 });
 
-// Event Handler
-wss.on("connection", function(socket) {
-    console.log("User Connected")
-    
-    socket.on("message", (e) =>
-    {
+wss.on("connection", function(socket)
+{
+    console.log("Connected")
+
+    socket.on("message", (e) => {
         if(e.toString() === "ping")
         {
-            socket.send("pong");
+            socket.send("pong")
         }
     })
     
-
 })
+
+
