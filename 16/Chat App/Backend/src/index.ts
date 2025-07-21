@@ -1,15 +1,14 @@
-import { WebSocketServer } from "ws"
-const wss = new WebSocketServer({ port : 8080 });
+import { WebSocketServer } from "ws";
+const wss = new WebSocketServer({ port: 8080 });
 
-wss.on("connection", function(socket)
-{
-    console.log("User Connect")
+wss.on("connection", (socket) => {
+  console.log("User Connected");
 
-    socket.on("message", (e) => 
-    {
-        if(e.toString() === "ping")
-        {
-            socket.send("pong")
-        }
-    })
-})
+  socket.on("message", (data) => {
+    const msg = data.toString();
+
+    if (msg != "") {
+      socket.send(msg);
+    }
+  });
+});
